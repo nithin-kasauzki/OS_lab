@@ -1,5 +1,7 @@
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <vector>
 using namespace std;
 
 int main()
@@ -7,20 +9,20 @@ int main()
 
     int n = 5, m = 4;
 
-    int work[m] = {3, 4, 0, 1};
+    int work[] = {3, 4, 0, 1};
     int need[n][m];
 
-    int max_need[n][m] = {{3, 2, 4, 2},
-                          {3, 5, 1, 2},
-                          {2, 7, 7, 5},
-                          {5, 5, 0, 8},
-                          {6, 2, 1, 4}};
+    int max_need[][] = {{3, 2, 4, 2},
+                        {3, 5, 1, 2},
+                        {2, 7, 7, 5},
+                        {5, 5, 0, 8},
+                        {6, 2, 1, 4}};
 
-    int alloc[n][m] = {{1, 0, 2, 0},
-                       {0, 3, 1, 2},
-                       {2, 4, 5, 1},
-                       {3, 0, 0, 6},
-                       {4, 2, 1, 3}};
+    int alloc[][] = {{1, 0, 2, 0},
+                     {0, 3, 1, 2},
+                     {2, 4, 5, 1},
+                     {3, 0, 0, 6},
+                     {4, 2, 1, 3}};
 
     for (int i = 0; i < n; i++)
     {

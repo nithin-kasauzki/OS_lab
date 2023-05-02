@@ -26,9 +26,9 @@ int main()
         read(fd[0], Buffer, 20);
         for (int i = 0; i < 20; i++)
         {
-            if (Buffer[i] == 'a')
+            if (Buffer[i] == 'a' || Buffer[i] == 'e' || Buffer[i] == 'i' || Buffer[i] == 'o')
             {
-                cout << "\nHi";
+                cout << Buffer[i];
             }
         }
         close(fd[0]);
