@@ -22,22 +22,37 @@ int main()
     sort(pr, pr + 5, cmp);
     int time = 0;
     cout << "-0-";
-    for (int i = 0; i < 5; i++)
-    {
-        cout << " p" << pr[i].id;
-        pr[i].wt = time - pr[i].wt;
-        pr[i].tat = pr[i].wt + pr[i].bt;
-        time += pr[i].bt;
+    for(int i=0;i<5;i++){
+        cout<<"P"<<pr[i].id<<"-";
+        pr[i].wt = time - pr[i].at;
+        pr[i].tat = pr[i].bt + pr[i].wt;
+        time+=pr[i].bt;
+        cout<<time<<"-";
         t_tat += pr[i].tat;
-        t_wt += pr[i].wt;
-        cout << " -" << time << "-";
-    }
-    cout << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        cout << "p" << pr[i].id << " " << pr[i].wt << " " << pr[i].tat << endl;
+        t_wt += pr[i].wt ;
+
     }
     cout << "\n"
          << t_tat / 5 << endl;
     cout << t_wt / 5;
 }
+
+
+
+
+
+// for (int i = 0; i < 5; i++)
+//     {
+//         cout << " p" << pr[i].id;
+//         pr[i].wt = time - pr[i].at;
+//         pr[i].tat = pr[i].wt + pr[i].bt;
+//         time += pr[i].bt;
+//         t_tat += pr[i].tat;
+//         t_wt += pr[i].wt;
+//         cout << " -" << time << "-";
+//     }
+//     cout << endl;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << "p" << pr[i].id << " " << pr[i].wt << " " << pr[i].tat << endl;
+//     }
